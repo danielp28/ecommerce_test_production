@@ -16,8 +16,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/c2a872d629.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/style.css">
+
 </head>
 
 <body>
@@ -26,16 +28,13 @@
         <div id="mySidebar" class="sidebar text">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="./productpage.html">Test Product Page</a>
-            <a href="#">Dj'ing</a>
-            <a href="#">Partying</a>
-            <a href="#">Tiddy'ing</a>
         </div>
 
         <div id="main">
             <button class="openbtn" onclick="openNav()">&#9776;</button>
         </div>
-        <a class="navbar-brand inherit-color text logo" href="#">
-            Tiddy Clothing
+        <a class="navbar-brand inherit-color text logo" href="./index.html">
+            <img src="./assets/images/tiddylogo2-small.jpg">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -44,14 +43,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav" id="right-items">
-                <a class="nav-item nav-link inherit-color text" href="#product-search">Search</a>
-                <a class="nav-item nav-link inherit-color text" href="..." target="_blank">Cart</a>
+                <a class="nav-item nav-link inherit-color text" href="#product-search"><i class="fas fa-search"></i>
+                </a>
+                <a class="nav-item nav-link inherit-color text" href="./cart.html" target="#"></a><i class="fas fa-shopping-cart"></i>
             </div>
         </div>
     </nav>
 
     <div class="container" id="home">
-        <div class="row" id="featured-recipes">
+        <div class="row" id="featured">
             <div class="container-fluid">
                 <div class="bd-example">
                     <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
@@ -100,6 +100,7 @@
 
     </div>
     <br><br>
+    
     <div class="row">
         <div class="col-md-12 text" id="centeredtext">
             <h5>Your one stop shop for all Tiddy apparel</h5>
@@ -127,7 +128,7 @@
 
 
     </div>
-    <script src="./js.js"></script>
+    <script src="./assets/js/js.js"></script>
 </body>
 
 </html>
