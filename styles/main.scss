@@ -1,0 +1,206 @@
+@import 'vars';
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Header Style*/
+header {
+  background: url("../images/da-img-1.jpg") no-repeat center center;
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background-size: cover;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+  font-size: 0.98em;
+
+  &:hover,
+  &:active {
+    color: #fff;
+  }
+}
+
+.da-home-page-text {
+  padding-top: 30vh;
+  color: #fff;
+
+  h2 {
+    font-weight: 500;
+  }
+  h3 {
+    line-height: 1.5;
+  }
+}
+@media (max-width:575.98px) {
+  .da-home-page-text {
+    .display-3 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}
+
+/*Projects Style*/
+.da-projects {
+  .da-project-1 {
+  position: relative;
+  min-height: 450px;
+  background-size: cover;
+  background-image: center center;
+  }
+
+  .da-project-2 {
+    position: relative;
+    min-height: 450px;
+    background-size: cover;
+    background-image: center center;
+  }
+
+  @media (max-width: 992px) {
+    .da-project-icon {
+      margin-right: 15px;
+    }
+  }
+}
+
+/* Expertise Skills Style */
+.da-expertise {
+  .da-exp-skills {
+    padding: 70px 40px 60px 40px;
+  }
+  .progress-bar {
+    transform: scaleX(0);
+    transition: transform 2s ease-in-out;
+    transform-origin: 0% 0%;
+  }
+  .aos-animate {
+    transform: scaleX(1);
+  }
+
+  .da-exp-image {
+    background-image: center center;
+    background-size: cover;
+    min-height: 450px;
+  }
+}
+
+/*Team Carousel Style*/
+.da-team {
+  .carousel-indicators {
+    bottom: 0px;
+    li {
+      background-color: $secondary;
+    }
+    .active {
+      background-color: $primary;
+    }
+  }
+}
+
+/*Image Gallery Style*/
+.da-gallery {
+  .card-columns {
+    .card {
+      border: none;
+      border-radius: none;
+    }
+  }
+
+  @media (max-width :992px) {
+    .card-columns {
+      column-count: 2;
+    }
+  }
+
+  @media (max-width :576px) {
+    .card-columns {
+      column-count: 1;
+    }
+  }
+}
+
+/* Company Brand Style */
+.da-company-brand {
+  img {
+    opacity: 0.6;
+    width: 90%;
+  }
+}
+
+.da-company-brand img:hover {
+  opacity: 1;
+}
+
+/*Contact Style*/
+.da-contact {
+  background: url("../images/staticmap.png") no-repeat center center;
+  position: relative;
+  min-height: 700px;
+  background-size: cover;
+
+  .da-contact-detail {
+    padding: 8% 0 8% 1%;
+
+    @media (max-width: 992px) {
+      padding: 15% 0 5% 1%;
+    }
+
+    @media (max-width: 767px) {
+      padding: 15px 0px 15px 0px;
+    }
+  }
+}
+
+/*Footer*/
+footer {
+  .da-social-link {
+    color: #fff;
+    text-decoration: none;
+
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+/* Credit Style */
+a.credit {
+  color: inherit;
+  border-bottom: 1px dashed;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Scroll Top Style*/
+#scrolltop {
+  display: none;
+	position:fixed;
+	bottom:20px;
+  right:20px;
+
+  .btn {
+    border-radius: 50%;
+  }
+}
+
+.icon {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+}
+
+/*Common Style*/
+.da-section {
+  padding: 100px 0;
+}
