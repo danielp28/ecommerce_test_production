@@ -97,11 +97,11 @@ header {
 }
 
 .da-team .carousel-indicators li {
-  background-color: #3d3f4c;
+  background-color: rgb(107,67,175);
 }
 
 .da-team .carousel-indicators .active {
-  background-color: #26b7a0;
+  background-color: rgb(107,67,175);
 }
 
 /*Image Gallery Style*/
@@ -204,4 +204,8 @@ a.credit {
 /*Common Style*/
 .da-section {
   padding: 100px 0;
+}
+
+#projects{
+  background: rgb(107,67,175);
 }
