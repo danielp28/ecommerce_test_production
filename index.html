@@ -26,75 +26,37 @@
 <body id="top">
   <header>
     <div class="container pt-4">
+      
+      
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0"><a class="text-white navbar-brand"
           href="#">TiDDY</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav"
-          aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
-            class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link smooth-scroll" href="#cart">Cart</a></li>
-            <li class="nav-item"><a class="nav-link smooth-scroll" href="#products">Products</a></li>
-            <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">InstaGallery</a></li>
-            <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-          </ul>
-        </div>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#products">Products</a>
+            <a href="#gallery">InstaGallery</a>
+            <a href="#learn">About us/Contact</a>
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          <a class="smooth-scroll btn btn-outline-light mt-4" onclick="openNav()">See More</a>
       </nav>
     </div>
     <div class="da-home-page-text" data-aos="fade-right" data-aos-duration="1000">
       <div class="container">
         <div class="col-md-10 col-sm-12 px-0 mx-0">
-          <h2 class="display-3 text-uppercase">TiDDY Clothing</h2>
-          <h3 class="h4 mt-3">Comfy with TiDDY, Comfy with YOU</h3><a class="smooth-scroll btn btn-outline-light mt-4"
-            href="#learn">Learn More</a>
+          <h2 class="display-3 text-uppercase" style="color:rgb(107,67,175)">TiDDY Clothing</h2>
+          <h3 class="h4 mt-3" style="color:rgb(107,67,175)">Comfy with TiDDY, Comfy with YOU</h3>
         </div>
       </div>
     </div>
   </header>
   <div class="page-content">
     <div>
-      <div class="da-section da-work bg-secondary" id="learn">
-        <div class="container">
-          <div class="h3 pb-3 text-center text-white" data-aos="fade-up">Who are we?</div>
-          <p class="px-5 pb-5 text-center text-white" data-aos="fade-up">A group of friends from the North Florida area,
-            we created TiDDY to fill a gap that we have noticed in the clothing industry for years. TiDDY is not defined
-            by age, race or gender, but by what you do when you have the TiDDY logo on your shirt. Our goal is to make
-            clothing that is comfortable and accessable to everyone, and to look good while doing it.</p>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-3" data-aos="flip-left">
-                <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-leaf fa-3x"></i>
-                  <div class="h4 pb-3">Eco-Friendly Printing Methods</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada
-                    laoreet tempus blandit pretium etc.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-3" data-aos="zoom-in-up">
-                <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-sliders-h fa-3x"></i>
-                  <div class="h4 pb-3">Gender Fluid Clothing</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada
-                    laoreet tempus blandit pretium etc.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-3" data-aos="flip-right">
-                <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-trophy fa-3x"></i>
-                  <div class="h4 pb-3">The Best Comfort You Can Buy</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada
-                    laoreet tempus blandit pretium etc.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="da-section bg-light" id="products">
         <div class="da-services">
           <div class="container text-center">
-            <div class="h3 pb-5 text-center" data-aos="fade-up">TiDDY Products</div>
+            <div class="h3 pb-5 text-center" data-aos="fade-up">What's Poppin'</div>
+            
             <div class="row">
               <div class="col-md-3">
                 <div class="card d-block mb-3"><img class="card-img-top" src="images/whiteshirt.jpg" alt="image" />
@@ -130,62 +92,18 @@
               </div>
             </div>
           </div>
-          <div class="da-section">
-            <div class="container">
-              <div class="h3 text-center" data-aos="fade-up">The TiDDY Team</div>
-            </div>
-            <div class="da-team carousel slide py-5" id="da-carouselIndicator" data-ride="carousel"
-              data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="container">
-                <ol class="carousel-indicators">
-                  <li class="active" data-target="#da-carouselIndicator" data-slide-to="0"></li>
-                  <li data-target="#da-carouselIndicator" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="card d-block mb-3"><img class="card-img-top" src="images/da-emp-1.jpg"
-                            alt="image" />
-                          <div class="card-body text-center">
-                            <div class="h5">Jason Tiddman</div>
-                            <p class="text-muted">CEO and head TiDDY'r</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card d-block mb-3"><img class="card-img-top" src="images/da-emp-2.jpg"
-                            alt="image" />
-                          <div class="card-body text-center">
-                            <div class="h5">Trevor Hall</div>
-                            <p class="text-muted">Creative Director</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card d-block mb-3"><img class="card-img-top" src="images/da-emp-3.jpg"
-                            alt="image" />
-                          <div class="card-body text-center">
-                            <div class="h5">Daniel Masters </div>
-                            <p class="text-muted">Software Developer and Web Designer</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
   </div>
   </div>
   <div class="container da-gallery" id="gallery">
-    <div class="h3 pb-5 text-center" data-aos="fade-up">Photo Gallery</div>
+    <div class="h3 pb-5 text-center" data-aos="fade-up">Insta-Gallery</div>
     <div class="card-columns">
-      <div class="card"><a href="images/gallery-img-3.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-a82687d1-8b5b-42bb-82e2-29a0b6d6ec00"></div>
+      <!-- <div class="card"><a href="images/gallery-img-3.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img
             class="img-fluid" src="images/gallery-img-3.jpg" alt="Gallery Image 1" /></a></div>
       <div class="card"><a href="images/gallery-img-5.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img
             class="img-fluid" src="images/gallery-img-5.jpg" alt="Gallery Image 2" /></a></div>
@@ -195,56 +113,86 @@
             class="img-fluid" src="images/gallery-img-1.jpg" alt="Gallery Image 4" /></a></div>
       <div class="card"><a href="images/gallery-img-2.jpg" data-toggle="lightbox" data-gallery="da-gallery"><img
             class="img-fluid" src="images/gallery-img-2.jpg" alt="Gallery Image 5" /></a></div>
+    </div> -->
     </div>
   </div>
-  <div class="da-section">
-    <div class="container da-company-brand py-5">
-      <div class="h3 pb-3 text-uppercase text-center" data-aos="fade-up">Featured in</div>
-      <p class="pb-3 text-center" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipiscing elit primis
-        rutrum, <br />nullam tempor malesuada laoreet tempus</p>
-      <div class="row">
+    <div class="da-section da-work bg-secondary" id="learn">
+      <div class="container">
+        <div class="h3 pb-3 text-center text-white" data-aos="fade-up">Who are we?</div>
+        <p class="px-5 pb-5 text-center text-white" data-aos="fade-up">A group of friends from the North Florida area,
+          we created TiDDY to fill a gap that we have noticed in the clothing industry for years. TiDDY is not defined
+          by age, race or gender, but by what you do when you have the TiDDY logo on your shirt. Our goal is to make
+          clothing that is comfortable and accessable to everyone, and to look good while doing it.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-3" data-aos="flip-left">
+              <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-leaf fa-3x"></i>
+                <div class="h4 pb-3">Eco-Friendly Printing Methods</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada
+                  laoreet tempus blandit pretium etc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3" data-aos="zoom-in-up">
+              <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-sliders-h fa-3x"></i>
+                <div class="h4 pb-3">Gender Fluid Clothing</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada
+                  laoreet tempus blandit pretium etc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3" data-aos="flip-right">
+              <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-trophy fa-3x"></i>
+                <div class="h4 pb-3">The Best Comfort You Can Buy</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada
+                  laoreet tempus blandit pretium etc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
-  <div class="da-section da-brand bg-secondary">
-    <div class="container text-center text-white">
-      <div class="carousel slide pb-5" id="da-brand-carouselIndicator" data-ride="carousel">
+  <div class="da-section">
+    <div class="container">
+      <div class="h3 text-center" data-aos="fade-up">The TiDDY Team</div>
+    </div>
+    <div class="da-team carousel slide py-5" id="da-carouselIndicator" data-ride="carousel" data-aos="zoom-in-up"
+      data-aos-duration="1000">
+      <div class="container">
         <ol class="carousel-indicators">
-          <li class="active" data-target="#da-brand-carouselIndicator" data-slide-to="0"></li>
-          <li data-target="#da-brand-carouselIndicator" data-slide-to="1"></li>
-          <li data-target="#da-brand-carouselIndicator" data-slide-to="2"></li>
+          <li class="active" data-target="#da-carouselIndicator" data-slide-to="0"></li>
+          <li data-target="#da-carouselIndicator" data-slide-to="1"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <p>"Lorem ipsum dolor sit amet consectetur adipiscing elit feugiat tellus sociosqu ornare, morbi
-                  risus urna tincidunt mus curabitur vel non massa natoque. Pretium tristique eget nulla sem
-                  condimentum ligula eu ultrices convallis, ridiculus nibh bibendum posuere consequat tempus
-                  blandit donec."</p>
-                <div class="h6 text-uppercase">Lorem Ipsum</div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/da-emp-1.jpg" alt="image" />
+                  <div class="card-body text-center">
+                    <div class="h5">Jason Tiddman</div>
+                    <p class="text-muted">CEO and head TiDDY'r</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <p>"Lorem ipsum dolor sit amet consectetur adipiscing elit feugiat tellus sociosqu ornare, morbi
-                  risus urna tincidunt mus curabitur vel non massa natoque. Pretium tristique eget nulla sem
-                  condimentum ligula eu ultrices convallis, ridiculus nibh bibendum posuere consequat tempus
-                  blandit donec."</p>
-                <div class="h6 text-uppercase">Lorem Ipsum</div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/da-emp-2.jpg" alt="image" />
+                  <div class="card-body text-center">
+                    <div class="h5">Trevor Hall</div>
+                    <p class="text-muted">Creative Director</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <p>"Lorem ipsum dolor sit amet consectetur adipiscing elit feugiat tellus sociosqu ornare, morbi
-                  risus urna tincidunt mus curabitur vel non massa natoque. Pretium tristique eget nulla sem
-                  condimentum ligula eu ultrices convallis, ridiculus nibh bibendum posuere consequat tempus
-                  blandit donec."</p>
-                <div class="h6 text-uppercase">Lorem Ipsum</div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/da-emp-3.jpg" alt="image" />
+                  <div class="card-body text-center">
+                    <div class="h5">Daniel Masters </div>
+                    <p class="text-muted">Software Developer and Web Designer</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -252,6 +200,8 @@
       </div>
     </div>
   </div>
+
+
   <div class="da-contact" id="contact">
     <div class="da-contact-detail" data-aos="zoom-in" data-aos-duration="1000">
       <div class="container">
@@ -316,10 +266,12 @@
         <div class="col-md-4">
           <div class="h6 pb-2">Follow Us</div>
           <ul>
-            <li><a class="da-social-link" href="https://twitter.com/TiDDYclothing" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a class="da-social-link" href="https://twitter.com/TiDDYclothing" target="_blank"><i
+                  class="fab fa-twitter"></i> Twitter</a></li>
             <li><a class="da-social-link" href="https://www.facebook.com/TiDDYclothing/?modal=admin_todo_tour"
                 target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-            <li><a class="da-social-link" href="https://www.instagram.com/tiddyclothing/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <li><a class="da-social-link" href="https://www.instagram.com/tiddyclothing/" target="_blank"><i
+                  class="fab fa-instagram"></i> Instagram</a>
             </li>
           </ul>
         </div>
